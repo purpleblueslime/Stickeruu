@@ -1,0 +1,51 @@
+@use 'roo';
+
+body {
+  background: #000;
+  color: #fff;
+  font: 900 1rem roo.$font;
+  margin: 0;
+}
+
+a {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+img {
+  object-fit: cover;
+}
+
+#app {
+  margin: auto;
+  padding: 0 10px;
+
+  /* if width's more than 1240px (idk it just works ¯\_(ツ)_/¯) */
+  @media (1240px <= width) { 
+    width: 1190px; 
+  }
+}
+
+.pathWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.path {
+  color: roo.$color;
+  overflow-wrap: break-word;
+  transition: .4s filter;
+}
+
+.path:hover {
+  filter: brightness(200%);
+}
+
+.h {
+  display: flex;
+  font: 900 1.8rem roo.$font;
+  margin: 10px 0;
+}

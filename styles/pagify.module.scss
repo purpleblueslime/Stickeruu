@@ -1,0 +1,29 @@
+@use 'roo';
+
+.btnsWrap {
+  display: flex;
+  margin: 20px 0;
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+  margin: auto;
+}
+
+.numba {
+  margin: auto 0;
+}
+
+.btn {
+  background: roo.$color;
+  border-radius: 50%;
+  color: #fff;
+  font: 900 1.2rem roo.$font;
+  padding: 7px 14px;
+  transition: .4s filter;
+}
+
+.btn:hover {
+  filter: brightness(120%);
+}

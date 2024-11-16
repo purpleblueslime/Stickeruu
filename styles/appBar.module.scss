@@ -1,0 +1,63 @@
+@use 'roo';
+
+#barWrap {
+  display: flex;
+  gap: 10px;
+  height: 60px;
+  padding: 10px 0;
+}
+
+.barImgWrap {
+  display: flex;
+  gap: 2px;
+  margin-left: auto;
+  transition: filter .4s;
+}
+
+.barImgWrap:hover {
+  filter: brightness(120%);
+}
+
+.bag {
+  background: roo.$color;
+  border-radius: 15px;
+  font: 900 .9rem roo.$font;
+  margin: auto;
+  padding: 10px 15px;
+}
+
+.barImg {
+  height: 60px;
+  width: 60px;
+}
+
+.boxWrap {
+  background: #000;
+  border-radius: 10px;
+  display: flex;
+  height: 40px;
+  margin: auto 0;
+}
+
+.box {
+  background: #00000000; /* messes with boxWrap */
+  border: none;
+  color: #fff;
+  font: 900 1rem roo.$font;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn {
+  background: #8cbbee;
+  border-radius: 50%;
+  font: 900 .9rem roo.$font;
+  margin: 4px;
+  padding: 8px 12px;
+  transition: filter .4s;
+}
+
+.btn:hover {
+  filter: brightness(120%);
+}

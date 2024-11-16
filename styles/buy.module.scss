@@ -1,0 +1,21 @@
+@use 'roo';
+
+.errWrap {
+  display: flex;
+}
+
+.errBox {
+  display: flex;
+  gap: 10px;
+  margin: auto;
+}
+
+.img {
+  height: 100px;
+  width: 99px;
+}
+
+#err {
+  font: 900 2rem roo.$font;
+  margin: auto 0;
+}

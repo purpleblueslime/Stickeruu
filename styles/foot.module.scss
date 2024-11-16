@@ -1,0 +1,33 @@
+@use 'roo';
+
+#foot {
+  display: flex;
+  gap: 10px;
+  margin: 80px 0;
+}
+
+.links {
+  display: flex;
+  font: 900 1.2rem #8cbbee;
+  gap: 10px;
+  margin: auto 0 auto auto;
+}
+
+.imgWrap {
+  display: flex;
+  gap: 10px;
+}
+
+.img {
+  width: 70px;
+}
+
+.link,
+.nolink {
+  font: 900 1.2rem roo.$font;
+  transition: color .2s;
+}
+
+.link:hover {
+  color: #8cbbee;
+}

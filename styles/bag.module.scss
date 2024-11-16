@@ -1,0 +1,56 @@
+@use 'roo';
+
+.bagWrap {
+  position: sticky;
+  height: auto;
+  width: 240px;
+}
+
+.imgWrap {
+  display: flex;
+  height: 240px;
+  width: 100%;
+}
+
+.img {
+  height: 160px;
+  transition: filter .4s;
+  margin: auto;
+  width: 160px;
+}
+
+.bagWrap:hover .img {
+  filter: brightness(120%);
+}
+
+.aboutWrap {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.about {
+  font: 900 1rem roo.$font;
+}
+
+.usd  {
+  font: 900 1.4rem roo.$font;
+}
+
+.btnWrap {
+  margin: auto;
+  margin-right: 0;
+}
+
+.btn {
+  background: #e2bea1;
+  border-radius: 10px;
+  color: #000;
+  font: 900 .8rem roo.$font;
+  padding: 10px 20px;
+  transition: filter .4s;
+}
+
+.btn:hover {
+  filter: brightness(120%);
+}

@@ -1,0 +1,90 @@
+@use 'roo';
+
+.stickerWrap {
+  position: sticky;
+  height: auto;
+  width: 240px;
+
+  @media (300px <= width <= 780px) { 
+    width: 180px; 
+  }
+
+  @media (460px >= width) { 
+    width: 180px; 
+  }
+}
+
+.img {
+  height: 240px;
+  transition: filter .4s;
+  width: 100%;
+
+  @media (780px >= width) { 
+    height: 200px; 
+  }
+}
+
+.stickerWrap:hover .img {
+  filter: brightness(120%);
+}
+
+.aboutWrap {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.about {
+  font: 900 1rem roo.$font;
+ 
+  @media (780px >= width) { 
+    font: 900 .8rem roo.$font;
+  }
+}
+
+.usd  {
+  font: 900 1.4rem roo.$font;
+  
+  @media (780px >= width) { 
+    font: 900 1.2rem roo.$font;
+  }
+}
+
+.btnWrap {
+  margin: auto;
+  margin-right: 0;
+
+  .btn {
+    padding: 10px 20px;
+
+    @media (460px >= width) { 
+      padding: 8px 14px;
+    }
+  }
+}
+
+.inBag {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+
+  .btn {
+    padding: 8px 12px;
+  }
+}
+
+.btn {
+  background: #8cbbee;
+  border-radius: 10px;
+  font: 900 .8rem roo.$font;
+  transition: filter .4s;
+
+  @media (780px >= width) { 
+    font: 900 .6rem roo.$font;
+  }
+}
+
+.btn:hover {
+  filter: brightness(120%);
+}
