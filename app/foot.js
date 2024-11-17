@@ -9,13 +9,13 @@ export default function Foot() {
         <img alt='img' className={styles.img} src='/cloud.png' />
         <div className={styles.links}>
           <span className={styles.nolink}>
-            (c) Stickeroo
+            (c) Stickeruu
           </span>
         </div>
       </div>
       <div className={styles.links}>
         <Link className={styles.link} 
-          href='https://github.com/purpleblueslime/Stickeroo' target='_'>
+          href='https://github.com/purpleblueslime/Stickeruu' target='_'>
             github
         </Link>
       </div>
